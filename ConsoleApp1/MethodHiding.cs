@@ -19,7 +19,7 @@ namespace ConsoleApp1
     {
         public override void Print()
         {
-            Console.WriteLine("This is the derived class");
+            Console.WriteLine("I am in derived class");
         }
 
     }
@@ -35,8 +35,11 @@ namespace ConsoleApp1
 
         public static void Main()
         {
-            Derived D=new Derived();
+            BaseClass D=new Derived();
             D.Print();
+
+            BaseClass D1 = new Derived2();
+            D1.Print();
 
         }
 
